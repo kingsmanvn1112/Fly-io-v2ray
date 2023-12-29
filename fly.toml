@@ -1,5 +1,5 @@
 app = "vra2"
-primary_region = "dfw"
+primary_region = "hkg"
 
 [build]
 [http_service]
@@ -46,4 +46,3 @@ primary_region = "dfw"
     handlers = ["tls", "http"]
     port = "443"
     tls_options = { "alpn" = ["h2", "http/1.1"], "versions" = ["TLSv1.2", "TLSv1.3"] }
-

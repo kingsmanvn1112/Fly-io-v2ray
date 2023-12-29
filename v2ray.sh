@@ -44,7 +44,8 @@ cat <<EOF >/etc/v2ray/config.json
                 "clients": [
                     {
                         "id": "fa18d449-b591-46fe-8100-b2a672065774",
-                        "alterId": 0
+                        "alterId": 0,
+                        "security": "auto"
                     }
                 ],
                 "disableInsecureEncryption": false
@@ -53,6 +54,8 @@ cat <<EOF >/etc/v2ray/config.json
                 "network": "tcp",
                 "security": "tls",
                 "tlsSettings": {
+                    "serverName": "dl.ops.kgvn.garenanow.com",
+                    "allowInsecure": true,
                     "certificates": [
                         {
                             "certificateFile": "/etc/v2ray/xray.crt",
